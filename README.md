@@ -64,6 +64,17 @@ npm run build      # production build (dist/)
 
 > ⚠️ Verify the NVIDIA model id / endpoint against the current NIM docs before grading — hosted models rotate.
 
+### Troubleshooting: “GitHub App is missing approved repository permissions”
+
+If Supabase or Vercel shows *“The GitHub App is missing approved repository permissions (Administration: Read and write)”*, the app on your GitHub account needs its new permissions approved once:
+
+1. Open https://github.com/settings/installations
+2. Find the app (e.g. **Supabase** or **Vercel**) → **Configure**
+3. Accept the pending permission change (**Administration: Read and write**) at the top of the page
+4. Retry the deploy / connect action
+
+If no banner appears, uninstall the app there and reconnect it from the Supabase/Vercel dashboard — the reinstall requests the full permission set. You must be the account (or org) owner to approve.
+
 ---
 
 ## Project structure
