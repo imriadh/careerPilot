@@ -1,0 +1,31 @@
+# Dependencies — never commit these, they are reinstalled with `npm install`
+node_modules/
+
+# Build output
+dist/
+build/
+.next/
+
+# Environment variables — SECRETS must never reach GitHub
+.env
+.env.local
+.env.*.local
+# (.env.example IS committed on purpose — it contains no real secrets)
+
+# Logs
+*.log
+npm-debug.log*
+
+# Supabase CLI local state
+supabase/.temp/
+supabase/.branches/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Test coverage
+coverage/
